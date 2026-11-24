@@ -1,0 +1,530 @@
+[
+  {
+    "index": 0,
+    "timestamp": "2025-10-01T00:00:00.000Z",
+    "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "c78b8e6b7e4b60dbaa4ae8baa7f43ae806dff55ebdb227a9911cdb2d6b20fa75",
+    "actor": "SYSTEM_INIT",
+    "role": "ADMIN",
+    "tool": "GENESIS_BOOTSTRAP",
+    "caseId": "ROOT",
+    "inputPayload": {
+      "system": "UP Police AI Samadhan Hackathon"
+    },
+    "outputPayload": {
+      "status": "Audit Chain Genesis Initialized"
+    }
+  },
+  {
+    "index": 1,
+    "timestamp": "2026-11-24T13:03:09.448Z",
+    "prevHash": "c78b8e6b7e4b60dbaa4ae8baa7f43ae806dff55ebdb227a9911cdb2d6b20fa75",
+    "hash": "037391bfbb9486d983230ed7ca1c192427aca23d13f79f0ce7c57421e4423649",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "search_case",
+    "caseId": "case_001",
+    "inputPayload": {
+      "caseId": "case_001",
+      "query": "mule account freeze"
+    },
+    "outputPayload": {
+      "summary": "Executed search_case successfully",
+      "resultKeys": [
+        "caseId",
+        "query",
+        "multiQueryUsed",
+        "totalHits",
+        "chunks"
+      ]
+    }
+  },
+  {
+    "index": 2,
+    "timestamp": "2026-11-24T13:03:09.452Z",
+    "prevHash": "037391bfbb9486d983230ed7ca1c192427aca23d13f79f0ce7c57421e4423649",
+    "hash": "5b7b957805dcb937a41073a3e54de75e4f9e6a8b6aa442b6b7a839215cadc548",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "get_law",
+    "caseId": "N/A",
+    "inputPayload": {
+      "act": "BNS 2023",
+      "section": "318(4)"
+    },
+    "outputPayload": {
+      "summary": "Executed get_law successfully",
+      "resultKeys": [
+        "queryCount",
+        "verifiedActs",
+        "sections"
+      ]
+    }
+  },
+  {
+    "index": 3,
+    "timestamp": "2026-11-24T13:03:09.453Z",
+    "prevHash": "5b7b957805dcb937a41073a3e54de75e4f9e6a8b6aa442b6b7a839215cadc548",
+    "hash": "f06ac9e2420fc159545e0d17280ff2a2abca9dde6cae1ec97907957dde1cd10c",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "compute_deadlines",
+    "caseId": "case_001",
+    "inputPayload": {
+      "caseId": "case_001"
+    },
+    "outputPayload": {
+      "summary": "Executed compute_deadlines successfully",
+      "resultKeys": [
+        "caseId",
+        "firNumber",
+        "computedAt",
+        "bailClock",
+        "victimUpdate",
+        "statutory_references"
+      ]
+    }
+  },
+  {
+    "index": 4,
+    "timestamp": "2026-11-24T13:03:09.454Z",
+    "prevHash": "f06ac9e2420fc159545e0d17280ff2a2abca9dde6cae1ec97907957dde1cd10c",
+    "hash": "863a03b246d96e4dc1408f99371ed61d9920eb5a8eab95657a76f22dc25905df",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "trace_money",
+    "caseId": "case_001",
+    "inputPayload": {
+      "caseId": "case_001"
+    },
+    "outputPayload": {
+      "summary": "Executed trace_money successfully",
+      "resultKeys": [
+        "caseId",
+        "firNumber",
+        "totalDisputedAmount",
+        "totalFrozenAmount",
+        "totalWithdrawnOrSiphoned",
+        "recoveryRatio",
+        "layers",
+        "freezePriorityList",
+        "recommendedActions",
+        "statutory_provisions"
+      ]
+    }
+  },
+  {
+    "index": 5,
+    "timestamp": "2026-11-24T13:03:09.455Z",
+    "prevHash": "863a03b246d96e4dc1408f99371ed61d9920eb5a8eab95657a76f22dc25905df",
+    "hash": "7f1be795dbf218f943d0114681003d12551ae26d087578bc8b54da9c35907a9c",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "find_gaps",
+    "caseId": "case_001",
+    "inputPayload": {
+      "caseId": "case_001"
+    },
+    "outputPayload": {
+      "summary": "Executed find_gaps successfully",
+      "resultKeys": [
+        "caseId",
+        "firNumber",
+        "totalChecklistItems",
+        "completedItems",
+        "completionPercentage",
+        "criticalGapsCount",
+        "weakCaseAlert",
+        "checklist",
+        "recommendations"
+      ]
+    }
+  },
+  {
+    "index": 6,
+    "timestamp": "2026-11-24T13:03:09.456Z",
+    "prevHash": "7f1be795dbf218f943d0114681003d12551ae26d087578bc8b54da9c35907a9c",
+    "hash": "799b137d0776f5449ead194669088a1263dcd856ac803712574ffcf7587358dd",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "list_links",
+    "caseId": "case_001",
+    "inputPayload": {
+      "caseId": "case_001"
+    },
+    "outputPayload": {
+      "summary": "Executed list_links successfully",
+      "resultKeys": [
+        "sourceCaseId",
+        "sourceFir",
+        "totalLinkedCases",
+        "links",
+        "syndicateAlert"
+      ]
+    }
+  },
+  {
+    "index": 7,
+    "timestamp": "2026-11-24T13:03:09.524Z",
+    "prevHash": "799b137d0776f5449ead194669088a1263dcd856ac803712574ffcf7587358dd",
+    "hash": "224593fd14575a55f657be176dc9de2a13336c4fe726e19e1ab112c780400b38",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "draft_notice",
+    "caseId": "case_001",
+    "inputPayload": {
+      "caseId": "case_001",
+      "noticeType": "bank_freeze_notice",
+      "language": "en"
+    },
+    "outputPayload": {
+      "summary": "Executed draft_notice successfully",
+      "resultKeys": [
+        "noticeType",
+        "title",
+        "statutoryActs",
+        "recipientType",
+        "language",
+        "draftContent",
+        "officerApprovalRequired",
+        "approvalStatus",
+        "statutoryWarning"
+      ]
+    }
+  },
+  {
+    "index": 8,
+    "timestamp": "2026-11-24T13:03:09.526Z",
+    "prevHash": "224593fd14575a55f657be176dc9de2a13336c4fe726e19e1ab112c780400b38",
+    "hash": "416c3f130bd44bfd18ab60deaf79efd28333bb38dedc19224f711f9822e56529",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "check_citations",
+    "caseId": "N/A",
+    "inputPayload": {
+      "text": "Case registered under BNS Section 318(4) and BNSS Section 107."
+    },
+    "outputPayload": {
+      "summary": "Executed check_citations successfully",
+      "resultKeys": [
+        "totalFound",
+        "isValid",
+        "verifiedCitations",
+        "unverifiedCitations",
+        "verdict"
+      ]
+    }
+  },
+  {
+    "index": 9,
+    "timestamp": "2026-11-24T13:03:09.527Z",
+    "prevHash": "416c3f130bd44bfd18ab60deaf79efd28333bb38dedc19224f711f9822e56529",
+    "hash": "45a570d33bd8adce88be1b2cb9ea2cbcbc3817140c8d086f7aa33e353f576515",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "check_citations",
+    "caseId": "N/A",
+    "inputPayload": {
+      "text": "Accused charged under BNS Section 99999 and Mars Law 44."
+    },
+    "outputPayload": {
+      "summary": "Executed check_citations successfully",
+      "resultKeys": [
+        "totalFound",
+        "isValid",
+        "verifiedCitations",
+        "unverifiedCitations",
+        "verdict"
+      ]
+    }
+  },
+  {
+    "index": 10,
+    "timestamp": "2026-11-24T13:03:09.529Z",
+    "prevHash": "45a570d33bd8adce88be1b2cb9ea2cbcbc3817140c8d086f7aa33e353f576515",
+    "hash": "b7c5daeb80394f5054102e43f5890768c5d0792eebad2dcea24761e3f20d5764",
+    "actor": "INSPECTOR_VERMA",
+    "role": "IO",
+    "tool": "TEST_AUDIT",
+    "caseId": "case_001",
+    "inputPayload": {
+      "test": true
+    },
+    "outputPayload": {
+      "ok": true
+    }
+  },
+  {
+    "index": 11,
+    "timestamp": "2026-11-24T13:03:09.530Z",
+    "prevHash": "b7c5daeb80394f5054102e43f5890768c5d0792eebad2dcea24761e3f20d5764",
+    "hash": "7fa0d323740df348bb4a7719397b05a09266d796badd6af008243a23768f0943",
+    "actor": "UNKNOWN_USER",
+    "role": "HACKER_ROLE",
+    "tool": "ACCESS_CHECK",
+    "caseId": "N/A",
+    "inputPayload": {
+      "action": "ACCESS_ATTEMPT"
+    },
+    "outputPayload": {
+      "denied": true,
+      "reason": "Invalid or missing role"
+    }
+  },
+  {
+    "index": 12,
+    "timestamp": "2026-11-24T17:33:18.598Z",
+    "prevHash": "7fa0d323740df348bb4a7719397b05a09266d796badd6af008243a23768f0943",
+    "hash": "9dab56a29b37a7514b0b0b57e172a8b994549e4b4aef6b34109b60a82853856d",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "search_case",
+    "caseId": "case_001",
+    "inputPayload": {
+      "caseId": "case_001",
+      "query": "mule account freeze"
+    },
+    "outputPayload": {
+      "summary": "Executed search_case successfully",
+      "resultKeys": [
+        "caseId",
+        "query",
+        "multiQueryUsed",
+        "totalHits",
+        "chunks"
+      ]
+    }
+  },
+  {
+    "index": 13,
+    "timestamp": "2026-11-24T17:33:18.604Z",
+    "prevHash": "9dab56a29b37a7514b0b0b57e172a8b994549e4b4aef6b34109b60a82853856d",
+    "hash": "8da1a1c5c00c7c8bf246f74508555839e4d686d434f1d50b004601e44a0c4208",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "get_law",
+    "caseId": "N/A",
+    "inputPayload": {
+      "act": "BNS 2023",
+      "section": "318(4)"
+    },
+    "outputPayload": {
+      "summary": "Executed get_law successfully",
+      "resultKeys": [
+        "queryCount",
+        "verifiedActs",
+        "sections"
+      ]
+    }
+  },
+  {
+    "index": 14,
+    "timestamp": "2026-11-24T17:33:18.606Z",
+    "prevHash": "8da1a1c5c00c7c8bf246f74508555839e4d686d434f1d50b004601e44a0c4208",
+    "hash": "36c2f7b2b0b21f70e9a0b20dcd19be7ac10d4f6672c3b1b410ab76a195405139",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "compute_deadlines",
+    "caseId": "case_001",
+    "inputPayload": {
+      "caseId": "case_001"
+    },
+    "outputPayload": {
+      "summary": "Executed compute_deadlines successfully",
+      "resultKeys": [
+        "caseId",
+        "firNumber",
+        "computedAt",
+        "bailClock",
+        "victimUpdate",
+        "statutory_references"
+      ]
+    }
+  },
+  {
+    "index": 15,
+    "timestamp": "2026-11-24T17:33:18.608Z",
+    "prevHash": "36c2f7b2b0b21f70e9a0b20dcd19be7ac10d4f6672c3b1b410ab76a195405139",
+    "hash": "95d4c7280862ab2917336c39c870321dfe9b01ff62ed8e2a1871ab698c873820",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "trace_money",
+    "caseId": "case_001",
+    "inputPayload": {
+      "caseId": "case_001"
+    },
+    "outputPayload": {
+      "summary": "Executed trace_money successfully",
+      "resultKeys": [
+        "caseId",
+        "firNumber",
+        "totalDisputedAmount",
+        "totalFrozenAmount",
+        "totalWithdrawnOrSiphoned",
+        "recoveryRatio",
+        "layers",
+        "freezePriorityList",
+        "recommendedActions",
+        "statutory_provisions"
+      ]
+    }
+  },
+  {
+    "index": 16,
+    "timestamp": "2026-11-24T17:33:18.609Z",
+    "prevHash": "95d4c7280862ab2917336c39c870321dfe9b01ff62ed8e2a1871ab698c873820",
+    "hash": "c2925b468751b307514786ae8c174fa0cac0490b685494a18fe18a83cfde7d62",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "find_gaps",
+    "caseId": "case_001",
+    "inputPayload": {
+      "caseId": "case_001"
+    },
+    "outputPayload": {
+      "summary": "Executed find_gaps successfully",
+      "resultKeys": [
+        "caseId",
+        "firNumber",
+        "totalChecklistItems",
+        "completedItems",
+        "completionPercentage",
+        "criticalGapsCount",
+        "weakCaseAlert",
+        "checklist",
+        "recommendations"
+      ]
+    }
+  },
+  {
+    "index": 17,
+    "timestamp": "2026-11-24T17:33:18.613Z",
+    "prevHash": "c2925b468751b307514786ae8c174fa0cac0490b685494a18fe18a83cfde7d62",
+    "hash": "0ece9f311d6c76a508c3db1e43756c24fb939a4c54287fdfe342817f3fd64f78",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "list_links",
+    "caseId": "case_001",
+    "inputPayload": {
+      "caseId": "case_001"
+    },
+    "outputPayload": {
+      "summary": "Executed list_links successfully",
+      "resultKeys": [
+        "sourceCaseId",
+        "sourceFir",
+        "totalLinkedCases",
+        "links",
+        "syndicateAlert"
+      ]
+    }
+  },
+  {
+    "index": 18,
+    "timestamp": "2026-11-24T17:33:18.709Z",
+    "prevHash": "0ece9f311d6c76a508c3db1e43756c24fb939a4c54287fdfe342817f3fd64f78",
+    "hash": "f6d62cdc123135767e08fb921430342bcc17808bca9c59319c388fce743ed866",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "draft_notice",
+    "caseId": "case_001",
+    "inputPayload": {
+      "caseId": "case_001",
+      "noticeType": "bank_freeze_notice",
+      "language": "en"
+    },
+    "outputPayload": {
+      "summary": "Executed draft_notice successfully",
+      "resultKeys": [
+        "noticeType",
+        "title",
+        "statutoryActs",
+        "recipientType",
+        "language",
+        "draftContent",
+        "officerApprovalRequired",
+        "approvalStatus",
+        "statutoryWarning"
+      ]
+    }
+  },
+  {
+    "index": 19,
+    "timestamp": "2026-11-24T17:33:18.711Z",
+    "prevHash": "f6d62cdc123135767e08fb921430342bcc17808bca9c59319c388fce743ed866",
+    "hash": "dbef57e374be060f704e1676c5588039ca52989630034e4cefa7faf91b61e88a",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "check_citations",
+    "caseId": "N/A",
+    "inputPayload": {
+      "text": "Case registered under BNS Section 318(4) and BNSS Section 107."
+    },
+    "outputPayload": {
+      "summary": "Executed check_citations successfully",
+      "resultKeys": [
+        "totalFound",
+        "isValid",
+        "verifiedCitations",
+        "unverifiedCitations",
+        "verdict"
+      ]
+    }
+  },
+  {
+    "index": 20,
+    "timestamp": "2026-11-24T17:33:18.712Z",
+    "prevHash": "dbef57e374be060f704e1676c5588039ca52989630034e4cefa7faf91b61e88a",
+    "hash": "ee159aba191192b57f86376dbbcab472ad60f9e5e3ab4b928b9d5a0e0606a285",
+    "actor": "INSPECTOR_RAJESH_VERMA",
+    "role": "IO",
+    "tool": "check_citations",
+    "caseId": "N/A",
+    "inputPayload": {
+      "text": "Accused charged under BNS Section 99999 and Mars Law 44."
+    },
+    "outputPayload": {
+      "summary": "Executed check_citations successfully",
+      "resultKeys": [
+        "totalFound",
+        "isValid",
+        "verifiedCitations",
+        "unverifiedCitations",
+        "verdict"
+      ]
+    }
+  },
+  {
+    "index": 21,
+    "timestamp": "2026-11-24T17:33:18.716Z",
+    "prevHash": "ee159aba191192b57f86376dbbcab472ad60f9e5e3ab4b928b9d5a0e0606a285",
+    "hash": "6fccfb9756622d3e5dca2c90ce7cc57b6a8a7bc44b25133ab564e35e067b092d",
+    "actor": "INSPECTOR_VERMA",
+    "role": "IO",
+    "tool": "TEST_AUDIT",
+    "caseId": "case_001",
+    "inputPayload": {
+      "test": true
+    },
+    "outputPayload": {
+      "ok": true
+    }
+  },
+  {
+    "index": 22,
+    "timestamp": "2026-11-24T17:33:18.721Z",
+    "prevHash": "6fccfb9756622d3e5dca2c90ce7cc57b6a8a7bc44b25133ab564e35e067b092d",
+    "hash": "b73fcd5df4a788e714c38407bbf96fc861d6d80d616c15759e6d8aaf2b3f67a9",
+    "actor": "UNKNOWN_USER",
+    "role": "HACKER_ROLE",
+    "tool": "ACCESS_CHECK",
+    "caseId": "N/A",
+    "inputPayload": {
+      "action": "ACCESS_ATTEMPT"
+    },
+    "outputPayload": {
+      "denied": true,
+      "reason": "Invalid or missing role"
+    }
+  }
+]

@@ -1,0 +1,662 @@
+[
+  {
+    "id": "case_001",
+    "case_title": "Telegram Part-time Job Investment Fraud (₹18.5 Lakhs)",
+    "case_title_hi": "टेलीग्राम पार्ट-टाइम जॉब निवेश धोखाधड़ी (₹18.5 लाख)",
+    "fir_number": "FIR No. 412/2025",
+    "fir_date": "2025-10-15T10:30:00Z",
+    "police_station": "Cyber Crime PS Lucknow",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "io": {
+      "name": "Inspector Rajesh Kumar Verma",
+      "rank": "Inspector",
+      "pno": "UPP-984210",
+      "phone": "+91-9454401021",
+      "role": "IO"
+    },
+    "complainant": {
+      "name": "Alok Ranjan Tripathi",
+      "age": 34,
+      "phone": "+91-9876543210",
+      "address": "Flat 402, Gomti Enclave, Gomti Nagar Extension, Lucknow",
+      "bank_account": "HDFC Bank A/c 50100492817291, IFSC: HDFC0001234"
+    },
+    "sections_invoked": [
+      "BNS Section 318(4)",
+      "BNS Section 319",
+      "BNS Section 111",
+      "IT Act Section 66D"
+    ],
+    "old_ipc_sections": ["IPC Section 420", "IPC Section 419"],
+    "max_penalty_years": 7,
+    "default_bail_period_days": 60,
+    "accused_arrested": true,
+    "arrest_date": "2025-11-05T14:00:00Z",
+    "remand_date": "2025-11-06T11:00:00Z",
+    "defrauded_amount": 1850000,
+    "recovered_amount": 620000,
+    "status": "Under Investigation",
+    "planted_contradiction": {
+      "type": "DATE_MISMATCH",
+      "severity": "HIGH",
+      "field_1": "Complaint incident date stated as 12-Oct-2025 in written narrative",
+      "field_2": "Certified HDFC Bank statement and UTR log show primary transfer of ₹5,00,000 on 14-Oct-2025",
+      "description": "Planted date conflict: Complainant states first payment of ₹5,00,000 was executed on 12-Oct-2025, but bank gateway records and UTR HDFC987123 show transaction occurred on 14-Oct-2025 at 16:42 hrs.",
+      "defense_vulnerability": "Defense counsel can challenge FIR timeline and credibility of complainant narrative during cross-examination unless IO clarifies time difference in Case Diary."
+    },
+    "contradiction_details": [
+      {
+        "type": "DATE_MISMATCH",
+        "doc1": "Complainant Written Statement (Page 1)",
+        "claim1": "Transferred ₹5,00,000 on 12-Oct-2025 after receiving Telegram task",
+        "doc2": "HDFC Bank Statement (Page 3)",
+        "claim2": "Debit of ₹5,00,000 recorded on 14-Oct-2025 (UTR HDFC987123)",
+        "recommendation": "IO must record supplementary statement under BNSS 180 and file bank time stamp proof in Parcha 2."
+      },
+      {
+        "type": "AMOUNT_MISMATCH",
+        "doc1": "FIR Form Header",
+        "claim1": "Total alleged loss: ₹18,50,000",
+        "doc2": "Sum of Bank Statement Transfers",
+        "claim2": "Sum of 4 transaction UTRs equals ₹18,20,000 (discrepancy of ₹30,000 in platform fee)",
+        "recommendation": "Clarify that ₹30,000 was initially paid via credit card fee and obtain CC transaction slip."
+      }
+    ],
+    "chunks": [
+      {
+        "chunk_id": "c1_chk_01",
+        "page_number": 1,
+        "source_doc": "FIR Form No. 412/2025",
+        "title": "FIR Summary & Narrative",
+        "text": "FIR No. 412/2025 registered at Cyber Crime PS Lucknow on 15-Oct-2025 under Section 318(4) BNS, 319 BNS and Section 66D IT Act on written application of Alok Ranjan Tripathi. Complainant alleges he was added to a Telegram group 'Global Review Taskers' by user '@Kavya_HR' promising ₹300 per Google review. After completing 3 tasks and receiving ₹900, he was lured into VIP Crypto Investment scheme promising 40% daily return. He deposited total ₹18,50,000 across multiple bank accounts between 14-Oct and 15-Oct.",
+        "keywords": ["telegram", "task fraud", "alok ranjan", "318(4)", "66d", "18.5 lakh", "kavya_hr"]
+      },
+      {
+        "chunk_id": "c1_chk_02",
+        "page_number": 2,
+        "source_doc": "Complainant Handwritten Hindi Complaint",
+        "title": "वादी का हस्तलिखित शिकायती पत्र",
+        "text": "सेवा में श्रीमान प्रभारी निरीक्षक महोदय, साइबर क्राइम थाना, लखनऊ। निवेदन है कि प्रार्थी आलोक रंजन त्रिपाठी को दिनांक 12-10-2025 को व्हाट्सएप और टेलीग्राम पर पार्ट टाइम घर बैठे ऑनलाइन टास्क पूरा कर 3000 से 5000 रुपये प्रतिदिन कमाने का झांसा दिया गया। पहले 900 रुपये मेरे खाते में भेजे गए। बाद में वीआईपी टास्क के नाम पर मुझसे विभिन्न खातों में कुल 18 लाख 50 हजार रुपये जमा करवा लिए गए। जब मैंने अपनी जमा रकम वापस मांगी तो मुझसे 5 लाख रुपये टैक्स के नाम पर और मांगे गए। प्रार्थी के साथ धोखाधड़ी हुई है। संदिग्ध मोबाइल नंबर 918822334455 व 917711223344 हैं।",
+        "keywords": ["हस्तलिखित शिकायत", "आलोक रंजन", "18 लाख 50 हजार", "टेलीग्राम", "टास्क", "12-10-2025"]
+      },
+      {
+        "chunk_id": "c1_chk_03",
+        "page_number": 3,
+        "source_doc": "Bank Statement & UTR Reconciliation",
+        "title": "HDFC Bank Statement & Primary Transaction Log",
+        "text": "Complainant HDFC A/c 50100492817291: Txn 1: 14-Oct-2025 16:42 IST UTR HDFC987123 Rs 5,00,000 to Yes Bank A/c 019283746501 (Beneficiary: Rameshwar Yadav Enterprises). Txn 2: 15-Oct-2025 10:15 IST UTR HDFC987441 Rs 5,00,000 to Yes Bank A/c 019283746501. Txn 3: 15-Oct-2025 12:30 IST UTR HDFC987992 Rs 4,20,000 to ICICI Bank A/c 629101827364 (Beneficiary: QuickPay Solution). Txn 4: 15-Oct-2025 14:10 IST UTR HDFC988102 Rs 4,00,000 to IndusInd Bank A/c 100928374619 (Beneficiary: Modern Tech Impex).",
+        "keywords": ["hdfc", "utr hdfc987123", "rameshwar yadav", "yes bank", "quickpay", "modern tech", "transactions"]
+      },
+      {
+        "chunk_id": "c1_chk_04",
+        "page_number": 4,
+        "source_doc": "1930 / CFCFRMS Layer 2 Tracing Memo",
+        "title": "CFCFRMS Layer 1 & Layer 2 Money Trail Memo",
+        "text": "1930 Portal Acknowledgement No. UP-2025-88291: Yes Bank A/c 019283746501 (Layer 1 Mule) received ₹10,00,000 on 14/15-Oct. Within 18 minutes, ₹6,00,000 was layered to Canara Bank A/c 294810293847 (Layer 2 Mule - Holder: Sunil Kumar, Bareilly), ₹2,50,000 layered to Kotak Mahindra Bank A/c 8839201928 (Layer 2 - Holder: Dinesh Maurya, Sitapur), and ₹1,50,000 withdrawn via ATM in Moradabad. Freeze order placed under Sec 107 BNSS: Canara Bank account currently holds ₹4,20,000 debit frozen.",
+        "keywords": ["cfcfrms", "mule", "sunil kumar", "dinesh maurya", "freeze", "canara bank", "layer 2"]
+      },
+      {
+        "chunk_id": "c1_chk_05",
+        "page_number": 5,
+        "source_doc": "Accused Interrogation & Seizure Memo",
+        "title": "Accused Rameshwar Yadav Arrest Memo (Sec 187 BNSS Custody)",
+        "text": "Arrest memo of Rameshwar Yadav s/o Ram Lal, arrested on 05-Nov-2025 from Lucknow Charbagh Railway station. Recovered: 1 Vivo smartphone containing 14 activated mule SIM cards, 8 debit cards, and Cheque book of Yes Bank A/c 019283746501. Accused admitted providing bank accounts on 2% commission to a syndicate coordinator operating on Telegram handle '@BossTrader99'. Remand obtained on 06-Nov-2025. 60-day default bail clock under Section 187 BNSS expires on 04-Jan-2026.",
+        "keywords": ["arrest", "rameshwar yadav", "05-nov-2025", "default bail clock", "187 bnss", "mule kit"]
+      }
+    ],
+    "transactions": [
+      {
+        "layer": 1,
+        "sender": "Alok Ranjan (Complainant)",
+        "sender_acc": "HDFC 50100492817291",
+        "receiver": "Rameshwar Yadav Ent. (Mule L1)",
+        "receiver_acc": "Yes Bank 019283746501",
+        "ifsc": "YESB0000192",
+        "amount": 1000000,
+        "utr": "HDFC987123 / HDFC987441",
+        "date": "2025-10-14T16:42:00Z",
+        "status": "Transferred",
+        "freeze_priority": "CRITICAL",
+        "freeze_status": "Partial Freeze (₹2,00,000 held)"
+      },
+      {
+        "layer": 2,
+        "sender": "Rameshwar Yadav Ent. (Mule L1)",
+        "sender_acc": "Yes Bank 019283746501",
+        "receiver": "Sunil Kumar (Mule L2)",
+        "receiver_acc": "Canara Bank 294810293847",
+        "ifsc": "CNRB0002948",
+        "amount": 600000,
+        "utr": "YESB44910293",
+        "date": "2025-10-14T17:05:00Z",
+        "status": "Siphoned",
+        "freeze_priority": "CRITICAL",
+        "freeze_status": "Success (₹4,20,000 frozen under Sec 107 BNSS)"
+      },
+      {
+        "layer": 2,
+        "sender": "Rameshwar Yadav Ent. (Mule L1)",
+        "sender_acc": "Yes Bank 019283746501",
+        "receiver": "Dinesh Maurya (Mule L2)",
+        "receiver_acc": "Kotak Mahindra 8839201928",
+        "ifsc": "KKBK0008839",
+        "amount": 250000,
+        "utr": "YESB44910400",
+        "date": "2025-10-14T17:18:00Z",
+        "status": "Siphoned",
+        "freeze_priority": "HIGH",
+        "freeze_status": "Pending Nodal Response"
+      },
+      {
+        "layer": 3,
+        "sender": "Rameshwar Yadav Ent. (Mule L1)",
+        "sender_acc": "Yes Bank 019283746501",
+        "receiver": "Cash ATM Withdrawal (Moradabad)",
+        "receiver_acc": "ATM Terminal ID MOR-4029",
+        "ifsc": "N/A",
+        "amount": 150000,
+        "utr": "ATM-TXN-90281",
+        "date": "2025-10-14T17:45:00Z",
+        "status": "Cash Withdrawn",
+        "freeze_priority": "EXPIRED",
+        "freeze_status": "CCTV Footage Requisitioned"
+      }
+    ],
+    "linked_identifiers": {
+      "suspect_phones": ["+91-9188223344", "+91-9177112233"],
+      "suspect_upi": ["rameshwar.mule@ybl", "taskpay.vip@icici"],
+      "bank_accounts": ["019283746501", "294810293847", "8839201928"],
+      "imei_numbers": ["864910052938471", "864910052938472"]
+    },
+    "gaps": [
+      {
+        "item": "Section 63 BSA Mandatory Certificate",
+        "legal_statute": "BSA 2023 Section 63 (formerly 65B IEA)",
+        "status": "MISSING",
+        "severity": "CRITICAL",
+        "action_required": "Obtain signed Section 63 BSA certificate from Complainant for Telegram chat printouts and mobile device."
+      },
+      {
+        "item": "Canara Bank Certified Ledger & KYC",
+        "legal_statute": "BNSS 2023 Section 94",
+        "status": "PENDING",
+        "severity": "HIGH",
+        "action_required": "Issue follow-up notice under Section 94 BNSS to Canara Bank Bareilly Branch Manager for Sunil Kumar KYC."
+      },
+      {
+        "item": "CDR and Tower Location Analysis",
+        "legal_statute": "BNSS 2023 Section 106",
+        "status": "RECEIVED",
+        "severity": "RESOLVED",
+        "action_required": "Analysis shows suspect phone active at Charbagh at time of cash withdrawal."
+      },
+      {
+        "item": "Statutory 90-Day Victim Update",
+        "legal_statute": "BNSS 2023 Section 193(3)(ii)",
+        "status": "PENDING",
+        "severity": "MEDIUM",
+        "action_required": "Mandatory progress update due to complainant by 13-Jan-2026."
+      }
+    ]
+  },
+  {
+    "id": "case_002",
+    "case_title": "Digital Arrest / Fake Police Video Call Extortion (₹45 Lakhs)",
+    "case_title_hi": "डिजिटल अरेस्ट / फर्जी पुलिस वीडियो कॉल वसूली (₹45 लाख)",
+    "fir_number": "FIR No. 89/2025",
+    "fir_date": "2025-11-01T09:00:00Z",
+    "police_station": "PS Gomti Nagar",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "io": {
+      "name": "Sub-Inspector Amit Kumar Singh",
+      "rank": "Sub-Inspector",
+      "pno": "UPP-772910",
+      "phone": "+91-9454402194",
+      "role": "IO"
+    },
+    "complainant": {
+      "name": "Dr. Sudha Srivastava",
+      "age": 62,
+      "phone": "+91-9415019283",
+      "address": "B-3/42, Vipul Khand, Gomti Nagar, Lucknow",
+      "bank_account": "SBI A/c 30192847561, IFSC: SBIN0009012"
+    },
+    "sections_invoked": [
+      "BNS Section 308",
+      "BNS Section 318(4)",
+      "BNS Section 319",
+      "BNS Section 336(3)",
+      "IT Act Section 66D"
+    ],
+    "old_ipc_sections": ["IPC Section 384", "IPC Section 420", "IPC Section 419", "IPC Section 468"],
+    "max_penalty_years": 7,
+    "default_bail_period_days": 60,
+    "accused_arrested": false,
+    "defrauded_amount": 4500000,
+    "recovered_amount": 2100000,
+    "status": "Urgent Action Required",
+    "planted_contradiction": {
+      "type": "AMOUNT_CONTRADICTION",
+      "severity": "HIGH",
+      "field_1": "Complaint narrative states victim transferred ₹45,00,000 under threat of CBI arrest",
+      "field_2": "Bank RTGS debit voucher reveals 2 transactions totaling ₹41,50,000, with remaining ₹3,50,000 failed/reversed at gateway",
+      "description": "Contradiction in net defrauded sum: Written statement cites ₹45 Lakhs lost, but core RTGS slips confirm ₹41.5 Lakhs debited and ₹3.5 Lakhs auto-reversed.",
+      "defense_vulnerability": "Variance of ₹3,50,000 in chargesheet charge head will be exploited as sloppy investigation."
+    },
+    "chunks": [
+      {
+        "chunk_id": "c2_chk_01",
+        "page_number": 1,
+        "source_doc": "FIR No. 89/2025",
+        "title": "FIR Summary & Digital Arrest Allegation",
+        "text": "Complainant Dr. Sudha Srivastava, retired professor, received an IVR call claiming her mobile number was linked to 17 illegal money-laundering bank accounts in Mumbai. The call was transferred via Skype video call displaying a fake police station backdrop with an impersonator in IPS officer uniform. Impersonator threatened non-bailable arrest warrant from Hon'ble Supreme Court and forced complainant to stay in 'Digital Arrest' in her room for 36 hours. Under extreme coercion, she transferred funds to 'RBI Verification Accounts'.",
+        "keywords": ["digital arrest", "sudha srivastava", "45 lakh", "skype", "fake ips", "bns 308", "bns 319"]
+      },
+      {
+        "chunk_id": "c2_chk_02",
+        "page_number": 2,
+        "source_doc": "RTGS Voucher & Bank Audit",
+        "title": "SBI Branch RTGS Transfer Records",
+        "text": "SBI Gomti Nagar Branch RTGS records: Txn 1: 30-Oct-2025 RTGS UTR SBIN00918237 Rs 25,00,000 credited to Punjab National Bank A/c 08910029384751 (Holder: Om Logistics Trade, New Delhi). Txn 2: 31-Oct-2025 RTGS UTR SBIN00918991 Rs 16,50,000 credited to Axis Bank A/c 921020019284756 (Holder: V-Tech Enterprises, Surat). Third transfer attempt of Rs 3,50,000 timed out due to bank daily limit and reversed.",
+        "keywords": ["rtgs", "sbi", "pnb", "axis bank", "om logistics", "v-tech", "4150000"]
+      }
+    ],
+    "transactions": [
+      {
+        "layer": 1,
+        "sender": "Dr. Sudha Srivastava",
+        "sender_acc": "SBI 30192847561",
+        "receiver": "Om Logistics Trade",
+        "receiver_acc": "PNB 08910029384751",
+        "ifsc": "PUNB0089100",
+        "amount": 2500000,
+        "utr": "SBIN00918237",
+        "date": "2025-10-30T11:20:00Z",
+        "status": "Frozen in Part",
+        "freeze_priority": "CRITICAL",
+        "freeze_status": "₹15,00,000 frozen under Sec 107 BNSS"
+      },
+      {
+        "layer": 1,
+        "sender": "Dr. Sudha Srivastava",
+        "sender_acc": "SBI 30192847561",
+        "receiver": "V-Tech Enterprises",
+        "receiver_acc": "Axis Bank 921020019284756",
+        "ifsc": "UTIB0009210",
+        "amount": 1650000,
+        "utr": "SBIN00918991",
+        "date": "2025-10-31T14:40:00Z",
+        "status": "Transferred to Crypto Mule",
+        "freeze_priority": "CRITICAL",
+        "freeze_status": "₹6,00,000 frozen, balance ₹10,50,000 diverted to crypto gateway"
+      }
+    ],
+    "linked_identifiers": {
+      "suspect_phones": ["+91-9188223344", "+91-9821094821"],
+      "suspect_upi": ["cbi.investigation@sbi", "rbi.clearance@axis"],
+      "bank_accounts": ["08910029384751", "921020019284756"],
+      "imei_numbers": ["864910052938471"]
+    },
+    "gaps": [
+      {
+        "item": "Skype / Microsoft IPDR & Video Call Logs",
+        "legal_statute": "BNSS Section 106",
+        "status": "PENDING",
+        "severity": "CRITICAL",
+        "action_required": "Issue urgent notice under Section 106 BNSS to Microsoft LEA Portal for Skype account login IPs and metadata."
+      },
+      {
+        "item": "Section 63 BSA Certificate for Audio Recordings",
+        "legal_statute": "BSA Section 63",
+        "status": "MISSING",
+        "severity": "HIGH",
+        "action_required": "Collect victim phone with Section 63 BSA certificate for forensic extraction of threatening WhatsApp audio notes."
+      }
+    ]
+  },
+  {
+    "id": "case_003",
+    "case_title": "Fake Electricity Bill Disconnection APK Scam (₹3.8 Lakhs)",
+    "case_title_hi": "फर्जी बिजली बिल बकाया एपीके मालवेयर ठगी (₹3.8 लाख)",
+    "fir_number": "FIR No. 204/2025",
+    "fir_date": "2025-11-10T12:00:00Z",
+    "police_station": "PS Civil Lines",
+    "district": "Prayagraj",
+    "state": "Uttar Pradesh",
+    "io": {
+      "name": "Inspector Manoj Pandey",
+      "rank": "Inspector",
+      "pno": "UPP-612984",
+      "phone": "+91-9454403819",
+      "role": "IO"
+    },
+    "complainant": {
+      "name": "Harish Chandra Shukla",
+      "age": 58,
+      "phone": "+91-9450123987",
+      "address": "45/12, Thornhill Road, Civil Lines, Prayagraj",
+      "bank_account": "Bank of Baroda A/c 21090100029182, IFSC: BARB0THORN"
+    },
+    "sections_invoked": [
+      "BNS Section 318(4)",
+      "IT Act Section 43",
+      "IT Act Section 66C",
+      "IT Act Section 66D"
+    ],
+    "old_ipc_sections": ["IPC Section 420"],
+    "max_penalty_years": 7,
+    "default_bail_period_days": 60,
+    "accused_arrested": false,
+    "defrauded_amount": 380000,
+    "recovered_amount": 190000,
+    "status": "Under Investigation",
+    "planted_contradiction": {
+      "type": "ACCOUNT_MISMATCH",
+      "severity": "MEDIUM",
+      "field_1": "Complainant stated electricity payment link asked to pay ₹10 via 'UPPCL Quick Pay'",
+      "field_2": "APK decompilation shows malware forwards SMS to phone +91-7001928374 registered under Jamtara circle",
+      "description": "Mismatch in accused representation vs actual malware recipient infrastructure.",
+      "defense_vulnerability": "Defense might claim victim willingly shared OTP without malware compulsion."
+    },
+    "chunks": [
+      {
+        "chunk_id": "c3_chk_01",
+        "page_number": 1,
+        "source_doc": "FIR No. 204/2025",
+        "title": "Electricity Bill Malware Summary",
+        "text": "Victim received SMS: 'Dear consumer your electricity power will be disconnected tonight at 9.30 PM from UPPCL office because your previous month bill was not updated. Please immediately contact electricity officer at 9811223344'. When called, victim was told to install 'UPPCL_Bill_Update.apk' to pay ₹10 nominal charge. The APK requested Accessibility & SMS reading permissions, intercepted Netbanking OTP and transferred ₹3,80,000 to Airtel Payments Bank.",
+        "keywords": ["electricity bill", "uppcl", "apk", "malware", "sms forward", "airtel payments bank", "prayagraj"]
+      }
+    ],
+    "transactions": [
+      {
+        "layer": 1,
+        "sender": "Harish Chandra Shukla",
+        "sender_acc": "Bank of Baroda 21090100029182",
+        "receiver": "Airtel Payments Bank Wallet",
+        "receiver_acc": "APBL 9918273645",
+        "ifsc": "AIRP0000001",
+        "amount": 380000,
+        "utr": "BARB99281726",
+        "date": "2025-11-09T20:15:00Z",
+        "status": "Transferred",
+        "freeze_priority": "HIGH",
+        "freeze_status": "₹1,90,000 frozen under Sec 107 BNSS"
+      }
+    ],
+    "linked_identifiers": {
+      "suspect_phones": ["+91-9811223344", "+91-7001928374"],
+      "suspect_upi": ["uppcl.update@airtel"],
+      "bank_accounts": ["9918273645"],
+      "imei_numbers": ["861092837465019"]
+    },
+    "gaps": [
+      {
+        "item": "Malware Hash & FSL Extraction",
+        "legal_statute": "BSA Section 63",
+        "status": "PENDING",
+        "severity": "HIGH",
+        "action_required": "Calculate SHA-256 hash of malicious APK and submit to Forensic Science Laboratory (FSL) Lucknow."
+      }
+    ]
+  },
+  {
+    "id": "case_004",
+    "case_title": "AePS Biometric Clone Fraud (₹1.2 Lakhs)",
+    "case_title_hi": "एईपीएस बायोमेट्रिक क्लोनिंग धोखाधड़ी (₹1.2 लाख)",
+    "fir_number": "FIR No. 115/2025",
+    "fir_date": "2025-11-12T11:00:00Z",
+    "police_station": "PS Sigra",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "io": {
+      "name": "Sub-Inspector Priya Sharma",
+      "rank": "Sub-Inspector",
+      "pno": "UPP-882194",
+      "phone": "+91-9454404921",
+      "role": "IO"
+    },
+    "complainant": {
+      "name": "Ram Das Maurya",
+      "age": 67,
+      "phone": "+91-9451928374",
+      "address": "Village Chitaipur, Varanasi",
+      "bank_account": "Union Bank of India A/c 40192837465, IFSC: UBIN0540192"
+    },
+    "sections_invoked": [
+      "BNS Section 318(4)",
+      "IT Act Section 66C"
+    ],
+    "old_ipc_sections": ["IPC Section 420"],
+    "max_penalty_years": 7,
+    "default_bail_period_days": 60,
+    "accused_arrested": false,
+    "defrauded_amount": 120000,
+    "recovered_amount": 40000,
+    "status": "Under Investigation",
+    "planted_contradiction": {
+      "type": "LOCATION_CONFLICT",
+      "severity": "HIGH",
+      "field_1": "Complainant asserts he was in Varanasi throughout the transaction week and never shared OTP",
+      "field_2": "AePS terminal GPS log shows biometric cash withdrawal occurred at a Common Service Center (CSC) in Azamgarh",
+      "description": "Complainant unaware how AePS works; suspect obtained deed registry thumbprints and cloned silicone replicas.",
+      "defense_vulnerability": "Absence of physical possession proof requires expert fingerprint opinion."
+    },
+    "chunks": [
+      {
+        "chunk_id": "c4_chk_01",
+        "page_number": 1,
+        "source_doc": "FIR No. 115/2025",
+        "title": "AePS Biometric Cloning Complaint",
+        "text": "Ram Das Maurya, farmer, noticed ₹1,20,000 debited in 12 successive transactions of ₹10,000 each via AePS without receiving OTP or using ATM card. Investigation reveals thumb impression was cloned using silicone polymer from land registry documents public portal.",
+        "keywords": ["aeps", "biometric clone", "silicone thumbprint", "union bank", "varanasi", "azamgarh"]
+      }
+    ],
+    "transactions": [
+      {
+        "layer": 1,
+        "sender": "Ram Das Maurya",
+        "sender_acc": "Union Bank 40192837465",
+        "receiver": "CSC Seva Kendra (Merchant)",
+        "receiver_acc": "Fino Payments Bank 1928374650",
+        "ifsc": "FINO0001001",
+        "amount": 120000,
+        "utr": "AEPS-TXN-12X-998",
+        "date": "2025-11-08T13:00:00Z",
+        "status": "Cash Dispensed at CSP",
+        "freeze_priority": "MEDIUM",
+        "freeze_status": "CSP Account flagged at NPCI"
+      }
+    ],
+    "linked_identifiers": {
+      "suspect_phones": ["+91-9451992200"],
+      "suspect_upi": ["aeps.merchant@fino"],
+      "bank_accounts": ["1928374650"],
+      "imei_numbers": ["863019283746501"]
+    },
+    "gaps": [
+      {
+        "item": "NPCI Terminal Biometric Log with Sec 63 BSA",
+        "legal_statute": "BSA Section 63",
+        "status": "MISSING",
+        "severity": "CRITICAL",
+        "action_required": "Requisition certified AePS authentication logs and device MAC ID from NPCI under Section 94 BNSS."
+      }
+    ]
+  },
+  {
+    "id": "case_005",
+    "case_title": "UPI QR Code Reversal Scam / OLX Armed Forces Impersonation (₹2.4 Lakhs)",
+    "case_title_hi": "यूपीआई क्यूआर कोड रिवर्सल फ्रॉड / ओएलएक्स सेना अधिकारी प्रतिरूपण (₹2.4 लाख)",
+    "fir_number": "FIR No. 302/2025",
+    "fir_date": "2025-11-15T15:00:00Z",
+    "police_station": "PS Sector 20",
+    "district": "Noida",
+    "state": "Uttar Pradesh",
+    "io": {
+      "name": "Sub-Inspector Vikrant Deshmukh",
+      "rank": "Sub-Inspector",
+      "pno": "UPP-554190",
+      "phone": "+91-9454405102",
+      "role": "IO"
+    },
+    "complainant": {
+      "name": "Kavita Singhal",
+      "age": 29,
+      "phone": "+91-9810928374",
+      "address": "Tower 4, Sector 50, Noida",
+      "bank_account": "ICICI Bank A/c 002101928374, IFSC: ICIC0000021"
+    },
+    "sections_invoked": [
+      "BNS Section 318(4)",
+      "BNS Section 319",
+      "BNS Section 336(3)",
+      "IT Act Section 66D"
+    ],
+    "old_ipc_sections": ["IPC Section 420", "IPC Section 419", "IPC Section 468"],
+    "max_penalty_years": 7,
+    "default_bail_period_days": 60,
+    "accused_arrested": false,
+    "defrauded_amount": 240000,
+    "recovered_amount": 80000,
+    "status": "Under Investigation",
+    "planted_contradiction": {
+      "type": "IDENTITY_FORGERY_CLASH",
+      "severity": "HIGH",
+      "field_1": "Suspect shared Indian Army Canteen Smart Card in name of 'Subedar Kuldeep Singh'",
+      "field_2": "Defense Army Records verification confirmed card number belongs to a deceased serviceman from 2018",
+      "description": "Suspect using forged military credentials on OLX marketplace.",
+      "defense_vulnerability": "Proves deliberate forgery under Section 336(3) BNS."
+    },
+    "chunks": [
+      {
+        "chunk_id": "c5_chk_01",
+        "page_number": 1,
+        "source_doc": "FIR No. 302/2025",
+        "title": "OLX Furniture Sale Scam Details",
+        "text": "Complainant posted wooden sofa set for sale on OLX for ₹25,000. Accused messaged pretending to be Army Subedar transferred to Noida cantonment. Accused claimed Army Accounts Department only pays via merchant QR code. Accused sent QR code asking victim to scan to 'receive' ₹25,000. On scanning, ₹25,000 was debited. Accused apologised claiming technical error, sent another QR of ₹50,000 to reverse, tricking victim into losing ₹2,40,000 total. Suspect phone number matches +91-9188223344 (active in Lucknow FIR 412/2025).",
+        "keywords": ["olx", "army impersonation", "qr code scam", "kavita singhal", "noida", "cross link 9188223344"]
+      }
+    ],
+    "transactions": [
+      {
+        "layer": 1,
+        "sender": "Kavita Singhal",
+        "sender_acc": "ICICI 002101928374",
+        "receiver": "PhonePe Merchant",
+        "receiver_acc": "State Bank of India 39182736450",
+        "ifsc": "SBIN0011928",
+        "amount": 240000,
+        "utr": "ICIC-UPI-8829102",
+        "date": "2025-11-14T18:20:00Z",
+        "status": "Transferred",
+        "freeze_priority": "HIGH",
+        "freeze_status": "₹80,000 frozen"
+      }
+    ],
+    "linked_identifiers": {
+      "suspect_phones": ["+91-9188223344", "+91-9988771122"],
+      "suspect_upi": ["subedar.army@sbi", "rameshwar.mule@ybl"],
+      "bank_accounts": ["39182736450", "019283746501"],
+      "imei_numbers": ["864910052938471"]
+    },
+    "gaps": [
+      {
+        "item": "PhonePe / NPCI Merchant Settlement Logs",
+        "legal_statute": "BNSS Section 94",
+        "status": "PENDING",
+        "severity": "HIGH",
+        "action_required": "Requisition merchant registration and bank settlement logs from PhonePe nodal officer."
+      }
+    ]
+  },
+  {
+    "id": "case_006",
+    "case_title": "Deepfake Voice / Executive Impersonation Corporate Wire Fraud (₹32 Lakhs)",
+    "case_title_hi": "डीपफेक वॉयस / कंपनी निदेशक प्रतिरूपण कॉर्पोरेट धोखाधड़ी (₹32 लाख)",
+    "fir_number": "FIR No. 56/2025",
+    "fir_date": "2025-11-18T16:00:00Z",
+    "police_station": "PS Indirapuram",
+    "district": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "io": {
+      "name": "Inspector Saurabh Tyagi",
+      "rank": "Inspector",
+      "pno": "UPP-449102",
+      "phone": "+91-9454406201",
+      "role": "IO"
+    },
+    "complainant": {
+      "name": "Naveen Aggarwal (CFO, Apex Auto Components)",
+      "age": 46,
+      "phone": "+91-9818293041",
+      "address": "B-12, Ahinsa Khand II, Indirapuram, Ghaziabad",
+      "bank_account": "Axis Bank Current A/c 918020039182746, IFSC: UTIB0001092"
+    },
+    "sections_invoked": [
+      "BNS Section 318(4)",
+      "BNS Section 319",
+      "BNS Section 111",
+      "IT Act Section 66C",
+      "IT Act Section 66D"
+    ],
+    "old_ipc_sections": ["IPC Section 420", "IPC Section 419"],
+    "max_penalty_years": 10,
+    "default_bail_period_days": 90,
+    "accused_arrested": false,
+    "defrauded_amount": 3200000,
+    "recovered_amount": 1800000,
+    "status": "Under Investigation",
+    "planted_contradiction": {
+      "type": "COMMUNICATION_CHANNEL_CONFLICT",
+      "severity": "HIGH",
+      "field_1": "CFO claims Managing Director instructed transfer over encrypted phone call at 14:15 hrs",
+      "field_2": "Managing Director passport and flight logs prove he was on an international in-flight flight mode from Dubai to Delhi",
+      "description": "Voice audio was synthetic deepfake clone trained on YouTube conference speeches of the Managing Director.",
+      "defense_vulnerability": "Requires audio spectral analysis to confirm AI synthesis."
+    },
+    "chunks": [
+      {
+        "chunk_id": "c6_chk_01",
+        "page_number": 1,
+        "source_doc": "FIR No. 56/2025",
+        "title": "Corporate Deepfake Wire Fraud Narrative",
+        "text": "CFO Naveen Aggarwal received a WhatsApp call from an unknown UK number with the profile picture and exact clone voice of Managing Director Mr. R.K. Singhal. The caller claimed an emergency acquisition of industrial tooling was closing in 2 hours and instructed immediate RTGS of ₹32,00,000 to an authorized vendor escrow account in Federal Bank. The transfer was made before discovering the MD was boarding a flight.",
+        "keywords": ["deepfake", "voice clone", "corporate fraud", "cfo", "indirapuram", "ghaziabad", "32 lakh"]
+      }
+    ],
+    "transactions": [
+      {
+        "layer": 1,
+        "sender": "Apex Auto Components Ltd",
+        "sender_acc": "Axis Bank 918020039182746",
+        "receiver": "Shree Shyam Escrow Services",
+        "receiver_acc": "Federal Bank 109283746519",
+        "ifsc": "FDRL0001092",
+        "amount": 3200000,
+        "utr": "UTIB-RTGS-992019",
+        "date": "2025-11-18T14:35:00Z",
+        "status": "Transferred",
+        "freeze_priority": "CRITICAL",
+        "freeze_status": "₹18,000,000 frozen under Sec 107 BNSS"
+      }
+    ],
+    "linked_identifiers": {
+      "suspect_phones": ["+44-7700900123", "+91-9188223344"],
+      "suspect_upi": ["escrow.settlement@federal"],
+      "bank_accounts": ["109283746519"],
+      "imei_numbers": ["869019283746510"]
+    },
+    "gaps": [
+      {
+        "item": "Audio Forensics Deepfake Spectral Analysis",
+        "legal_statute": "BSA Section 63",
+        "status": "PENDING",
+        "severity": "CRITICAL",
+        "action_required": "Submit WhatsApp call audio recording to CDAC / CFSL for deepfake voice synthesis verification."
+      }
+    ]
+  }
+]

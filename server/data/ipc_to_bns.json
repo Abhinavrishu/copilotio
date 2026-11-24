@@ -1,0 +1,91 @@
+[
+  {
+    "old_law": "IPC",
+    "old_section": "Section 420",
+    "old_title": "Cheating and dishonestly inducing delivery of property",
+    "new_law": "BNS",
+    "new_section": "Section 318(4)",
+    "new_title": "Cheating and dishonestly inducing delivery of property",
+    "max_penalty": "7 years + fine",
+    "bail_type": "Non-bailable",
+    "key_change": "Renumbered in BNS 2023 under Chapter XV (Offences Against Property)"
+  },
+  {
+    "old_law": "IPC",
+    "old_section": "Section 419",
+    "old_title": "Cheating by personation",
+    "new_law": "BNS",
+    "new_section": "Section 319",
+    "new_title": "Cheating by personation",
+    "max_penalty": "5 years + fine",
+    "bail_type": "Non-bailable",
+    "key_change": "Punishment increased, covered under Section 319"
+  },
+  {
+    "old_law": "IPC",
+    "old_section": "Section 468",
+    "old_title": "Forgery for purpose of cheating",
+    "new_law": "BNS",
+    "new_section": "Section 336(3)",
+    "new_title": "Forgery for purpose of cheating",
+    "max_penalty": "7 years + fine",
+    "bail_type": "Non-bailable",
+    "key_change": "Electronic forgery explicitly included"
+  },
+  {
+    "old_law": "IPC",
+    "old_section": "Section 384",
+    "old_title": "Extortion",
+    "new_law": "BNS",
+    "new_section": "Section 308",
+    "new_title": "Extortion",
+    "max_penalty": "3 years + fine",
+    "bail_type": "Non-bailable",
+    "key_change": "Includes extortion via digital media and coercive threats"
+  },
+  {
+    "old_law": "CrPC",
+    "old_section": "Section 91",
+    "old_title": "Summons to produce document or other thing",
+    "new_law": "BNSS",
+    "new_section": "Section 94",
+    "new_title": "Summons to produce document or other thing",
+    "key_change": "Electronic communications and digital document summons recognized"
+  },
+  {
+    "old_law": "CrPC",
+    "old_section": "Section 102",
+    "old_title": "Power of police officer to seize certain property",
+    "new_law": "BNSS",
+    "new_section": "Section 107",
+    "new_title": "Attachment, forfeiture or freezing of property / proceeds of crime",
+    "key_change": "Explicit power to freeze bank accounts and digital wallets directly"
+  },
+  {
+    "old_law": "CrPC",
+    "old_section": "Section 167",
+    "old_title": "Procedure when investigation cannot be completed in 24 hours (Bail Clock)",
+    "new_law": "BNSS",
+    "new_section": "Section 187",
+    "new_title": "Custody and 60/90 day default bail clock",
+    "key_change": "Strict timeline tracking, police custody can be taken in parts within first 40 or 60 days"
+  },
+  {
+    "old_law": "CrPC",
+    "old_section": "None (New Provision)",
+    "old_title": "No statutory progress update obligation",
+    "new_law": "BNSS",
+    "new_section": "Section 193(3)(ii)",
+    "new_title": "Mandatory 90-day progress update to victim/informant",
+    "key_change": "IO must update victim on investigation progress within 90 days of FIR"
+  },
+  {
+    "old_law": "Indian Evidence Act",
+    "old_section": "Section 65B",
+    "old_title": "Admissibility of electronic records certificate",
+    "new_law": "BSA",
+    "new_section": "Section 63",
+    "new_title": "Conditions for admissibility of electronic records & certificate",
+    "key_change": "Mandatory Schedule certificate signed by person in control of computer device"
+  }
+]

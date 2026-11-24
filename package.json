@@ -1,0 +1,12 @@
+{
+  "name": "up-police-investigation-copilot",
+  "version": "1.0.0",
+  "description": "Investigation Copilot for UP Police Investigating Officers (UP AI Samadhan Hackathon)",
+  "scripts": {
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client dev",
+    "test": "npm --prefix server test",
+    "sync:supabase": "node server/scripts/syncSupabase.js",
+    "build": "npm --prefix client run build"
+  }
+}
